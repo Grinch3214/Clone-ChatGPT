@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TODO: create dark/light mode! */
+@layer base {
+	:root {
+		--sidebar: rgb(43, 43, 43);
+
+		--background: #FFFFFF;
+		--foreground: #E5E5E5;
+
+		--muted: #F8F8F8;
+		--muted-foreground: #D9B69A;
+
+		--popover: #FFFFFF;
+		--popover-foreground: #E5E5E5;
+
+		--card: #FFFFFF;
+		--card-foreground: #E5E5E5;
+
+		--border: #F3F3F3;
+		--input: #F3F3F3;
+
+		--primary: #265fda;
+		--primary-foreground: #FAFAFA;
+
+		--secondary: #F8F8F8;
+		--secondary-foreground: #1C1C1C;
+
+		--accent: #F8F8F8;
+		--accent-foreground: #1C1C1C;
+
+		--destructive: #993333;
+		--destructive-foreground: #FAFAFA;
+
+		--ring: #FFFFFF;
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: #1C1C1C;
+		--foreground: #FAFAFA;
+
+		--muted: #383838;
+		--muted-foreground: #A67E5E;
+
+		--popover: #1C1C1C;
+		--popover-foreground: #FAFAFA;
+
+		--card: #1C1C1C;
+		--card-foreground: #FAFAFA;
+
+		--border: #5a5757;
+		--input: #383838;
+
+		--primary: #265fda;
+		--primary-foreground: #FAFAFA;
+
+		--secondary: #383838;
+		--secondary-foreground: #FAFAFA;
+
+		--accent: #383838;
+		--accent-foreground: #FAFAFA;
+
+		--destructive: #602020;
+		--destructive-foreground: #FAFAFA;
+
+		--ring: #564FAF;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+		scrollbar-width: thin;
+    scrollbar-color: #4f4545 #fff;
+	}
+
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #4f4545;
+  }
+
+	body {
+		@apply bg-background text-foreground text-xl;
+		font-family: 'Lato', sans-serif;
+		line-height: 1;
+	}
+}
