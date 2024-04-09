@@ -4,6 +4,10 @@
 
 This project is a clone of a chat application powered by ChatGPT, which is based on OpenAI's GPT architecture. It allows users to engage in conversations with an AI model capable of generating human-like responses based on the input it receives. The project is built using Nuxt 3 and integrates various plugins to enhance its functionality and appearance.
 
+## Preview
+
+![gif](https://github.com/Grinch3214/Clone-ChatGPT/blob/main/demo/demo.gif)
+
 ## Requirements
 
 ### The project requires the installation of the following software:
