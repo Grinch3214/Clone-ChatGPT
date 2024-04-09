@@ -1,13 +1,17 @@
 <template>
 		<p
 			@click="chatGptStore.getIndexListItem(prompt)"
-			class="list text-xs whitespace-nowrap cursor-pointer relative p-2 before:absolute before:content-block before:top-0 before:bottom-0 before:w-60 before:-mx-1.5 before:rounded-md group"
+			class="list text-sm md:text-xs whitespace-nowrap cursor-pointer relative p-2 before:absolute before:content-block before:top-0 before:bottom-0 before:w-60 before:-mx-1.5 before:rounded-md group"
 		>
 			<span class="relative">
 				{{ prompt[0].content }}. 
 				<span class="opacity-75">{{ prompt[1].content }}</span>
 			</span>
-			<button @click.stop="modal = true" class="opacity-0 absolute z-50 top-1/2 -translate-y-2/4 right-0 bg-background rounded-md p-1 group-hover:opacity-100 hover:text-white/60">
+
+			<button
+			  @click.stop="modal = true"
+			  class="opacity-70 md:opacity-0 absolute z-50 top-1/2 -translate-y-2/4 right-0 bg-background rounded-md p-1 md:group-hover:opacity-100 hover:text-white/60"
+			>
 				<Icon name="codicon:trash" size="16px" />
 			</button>
 
