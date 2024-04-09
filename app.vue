@@ -4,12 +4,12 @@
 	</NuxtLayout>
 </template>
 
-<script setup>
-	import { useChatGptStore } from '~/store/index'
+<script setup lang="ts">
+	import { GptAction, useChatGptStore } from '~/store/index'
 
 	const chatGptStore = useChatGptStore()
 
 	onMounted(() => {
-		chatGptStore.loadFromLocalStorage()
+		chatGptStore[GptAction.LOAD_FROM_LOCAL_STORAGE]()
 	})
 </script>

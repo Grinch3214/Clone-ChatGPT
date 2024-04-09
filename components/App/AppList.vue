@@ -1,6 +1,6 @@
 <template>
 		<p
-			@click="chatGptStore.getIndexListItem(prompt)"
+			@click="getIndexListItem(prompt)"
 			class="list text-sm md:text-xs whitespace-nowrap cursor-pointer relative p-2 before:absolute before:content-block before:top-0 before:bottom-0 before:w-60 before:-mx-1.5 before:rounded-md group"
 		>
 			<span class="relative">
@@ -29,7 +29,7 @@
 
 <script setup lang="ts">
 	import { Prompt } from '~/types/gpt.ts'
-	import { useChatGptStore } from '~/store/index'
+	import { GptAction, useChatGptStore } from '~/store/index'
 
 	const props = defineProps<{
 		prompt: Prompt[]
@@ -39,8 +39,14 @@
 	const modal = ref(false)
 
 	const deleteItem = (item) => {
-		chatGptStore.deleteMessage(item)
+		chatGptStore.dataMessages = chatGptStore.dataMessages.filter(elem => elem !== item)
+		chatGptStore[GptAction.SAVE_TO_LOCAL_STORAGE]()
 		modal.value = false
+	}
+
+	const getIndexListItem = (elem) => {
+		chatGptStore.chatTree = elem
+		chatGptStore.toggleEvent = false
 	}
 </script>
 

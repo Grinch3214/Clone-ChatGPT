@@ -5,11 +5,12 @@
 </template>
 
 <script setup type="ts">
+	import { GptAction } from '~/store'
 	const colorMode = useColorMode()
 
 	const modes = [
-		'light',
-		'dark'
+		GptAction.LIGHT,
+		GptAction.DARK
 	]
 
 	const nextMode = computed(() => {

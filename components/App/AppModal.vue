@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-const emits = defineEmits(['close'])
+const emit = defineEmits(['close'])
 const props = defineProps<{
 	title: string,
 }>()
@@ -27,7 +27,7 @@ const props = defineProps<{
 onMounted(() => {
   document.body.addEventListener('keyup', e => {
 		if(e.key === 'Escape') {
-			emits('close')
+			emit('close')
 		}
 	})
 })
