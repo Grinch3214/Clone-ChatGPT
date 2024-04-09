@@ -1,5 +1,5 @@
 <template>
-	<button @click="chatGptStore.sendMessage(concatMessage)" class="p-3 border border-border rounded-md cursor-pointer hover:bg-zinc-800 transition-colors relative outline-none focus:shadow-border focus:shadow-white" tabindex="0">
+	<button @click="chatGptStore.sendMessage(concatMessage)" class="p-3 border border-border rounded-md cursor-pointer hover:bg-secondary transition-colors relative outline-none focus:shadow-border" tabindex="0">
 		<div class="absolute top-1/2 right-2 -translate-y-1/2 z-20 opacity-0 hover:opacity-100 group">
 			<span class="tooltip group-hover:block">Send message</span>
 			<Icon name="jam:arrow-square-up-f" size="26px" color="rgba(0,0,0, 0.4)" />

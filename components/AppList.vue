@@ -10,7 +10,7 @@
 
 			<button
 			  @click.stop="modal = true"
-			  class="opacity-70 md:opacity-0 absolute z-50 top-1/2 -translate-y-2/4 right-0 bg-background rounded-md p-1 md:group-hover:opacity-100 hover:text-white/60"
+			  class="opacity-70 md:opacity-0 absolute z-50 top-1/2 -translate-y-2/4 right-0 bg-accent rounded-md p-1 md:group-hover:opacity-100 hover:text-secondary/60"
 			>
 				<Icon name="codicon:trash" size="16px" />
 			</button>
@@ -18,7 +18,7 @@
 			<AppModal v-show="modal" title="Do you want to clear item?" @close="modal = false">
 			<template v-slot:body>
 				<div class="flex gap-4 justify-center font-light">
-					<button @click="modal = false" class="px-8 pt-1 pb-1.5 border border-white rounded-md text-sm">Close</button>
+					<button @click="modal = false" class="px-8 pt-1 pb-1.5 border border-border rounded-md text-sm">Close</button>
 					<button @click="deleteItem(prompt)" class="px-8 pt-1 pb-1.5 border border-red-400 text-red-400 rounded-md text-sm">Yes</button>
 				</div>
 			</template>

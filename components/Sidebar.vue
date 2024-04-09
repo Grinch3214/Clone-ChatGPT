@@ -14,19 +14,19 @@
 
 		<button
 		  @click="chatGptStore.openNeewChat"
-		  class="mb-10 flex w-full gap-2 items-center text-sm hover:bg-secondary px-2 py-1 rounded-md transition-colors outline-none focus:shadow-border focus:shadow-white"
+		  class="mb-10 flex w-full gap-2 items-center text-sm hover:bg-secondary px-2 py-1 rounded-md transition-colors outline-none focus:shadow-border focus:shadow-border"
 		>
-			<Icon name="simple-icons:openai" size="1.5rem" color="white" />
+			<Icon name="simple-icons:openai" size="1.5rem" />
 			<span>New chat</span>
 			<div class="relative ml-auto group">
 				<span class="tooltip group-hover:block">New chat</span>
-				<Icon name="material-symbols:add" size="22px" color="white" />
+				<Icon name="material-symbols:add" size="22px" />
 			</div>
 		</button>
 
 		<button
 		  @click="modal = true"
-		  class="text-sm px-2 border border-white rounded-md w-full text-center py-2 mb-4 hover:bg-secondary transition-colors outline-none focus:shadow-border focus:shadow-white"
+		  class="text-sm px-2 border border-border rounded-md w-full text-center py-2 mb-4 hover:bg-secondary transition-colors outline-none focus:shadow-border focus:shadow-border"
 		>
 			Clear history
 		</button>
@@ -46,7 +46,7 @@
 		>
 			<template v-slot:body>
 				<div class="flex gap-4 justify-center font-light">
-					<button @click="modal = false" class="px-8 pt-1 pb-1.5 border border-white rounded-md text-sm">Close</button>
+					<button @click="modal = false" class="px-8 pt-1 pb-1.5 border border-border rounded-md text-sm">Close</button>
 					<button @click="deleteAllMessages" class="px-8 pt-1 pb-1.5 border border-red-400 text-red-400 rounded-md text-sm">Yes</button>
 				</div>
 			</template>
@@ -89,6 +89,6 @@
 
 <style scoped>
 .tooltip {
-	@apply px-2 hidden pointer-events-none py-0.5 text-xs absolute top-1/2 -translate-y-2/4 left-6 bg-background border border-white rounded-sm whitespace-nowrap before:absolute before:top-1/2 before:-left-1 before:-translate-y-2/4 before:block before:w-2 before:h-2 before:bg-background before:border-r before:border-b before:rotate-[135deg];
+	@apply px-2 hidden pointer-events-none py-0.5 text-xs absolute top-1/2 -translate-y-2/4 left-6 bg-background border border-border rounded-sm whitespace-nowrap before:absolute before:top-1/2 before:-left-1 before:-translate-y-2/4 before:block before:w-2 before:h-2 before:bg-background before:border-r before:border-b before:border-border before:rotate-[135deg];
 }
 </style>
