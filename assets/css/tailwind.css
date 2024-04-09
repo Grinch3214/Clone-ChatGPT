@@ -5,10 +5,11 @@
 /* TODO: create dark/light mode! */
 @layer base {
 	:root {
-		--sidebar: rgb(43, 43, 43);
+		--sidebar: #9e9191;
+		--sidebar-foreground: #1a1a1a;
 
-		--background: #FFFFFF;
-		--foreground: #E5E5E5;
+		--background: #f5eaea;
+		--foreground: #1a1a1a;
 
 		--muted: #F8F8F8;
 		--muted-foreground: #D9B69A;
@@ -19,16 +20,16 @@
 		--card: #FFFFFF;
 		--card-foreground: #E5E5E5;
 
-		--border: #F3F3F3;
+		--border: #3f3d3d;
 		--input: #F3F3F3;
 
 		--primary: #265fda;
 		--primary-foreground: #FAFAFA;
 
-		--secondary: #F8F8F8;
+		--secondary: rgba(105, 101, 101, 0.205);
 		--secondary-foreground: #1C1C1C;
 
-		--accent: #F8F8F8;
+		--accent: #a7a5a5;
 		--accent-foreground: #1C1C1C;
 
 		--destructive: #993333;
@@ -39,13 +40,16 @@
 	}
 
 	.dark {
+		--sidebar: rgb(43, 43, 43);
+		--sidebar-foreground: #cacaca;
+		
 		--background: #1C1C1C;
 		--foreground: #FAFAFA;
 
 		--muted: #383838;
 		--muted-foreground: #A67E5E;
 
-		--popover: #1C1C1C;
+		--popover: #3a3636;
 		--popover-foreground: #FAFAFA;
 
 		--card: #1C1C1C;
@@ -60,7 +64,7 @@
 		--secondary: #383838;
 		--secondary-foreground: #FAFAFA;
 
-		--accent: #383838;
+		--accent: #242323;
 		--accent-foreground: #FAFAFA;
 
 		--destructive: #602020;

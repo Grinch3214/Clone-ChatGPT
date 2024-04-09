@@ -5,7 +5,7 @@
 		  class="h-full flex flex-col justify-center"
 		>
 			<div class="text-center">
-				<Icon name="simple-icons:openai" size="2.5rem" color="white" />
+				<Icon name="simple-icons:openai" size="2.5rem" />
 				<p class="text-2xl mt-2">How can I help you today?</p>
 			</div>
 		</div>
