@@ -32,7 +32,7 @@
 			/>
 		</div>
 		<AppTextarea />
-		<NuxtNotifications position="top center" :speed="500" />
+		<NuxtNotifications position="top right" :speed="500" />
 	</div>
 </template>
 

@@ -33,9 +33,9 @@ export const useChatGptStore = defineStore('chatGptStore', () => {
 			chatTree.value.push(responseMessage)
 
 			if (chatTree.value.length > 2) {
-				const lastIndex = dataMessages.value.length - 1
-				dataMessages.value[lastIndex].push(message)
-				dataMessages.value[lastIndex].push(responseMessage)
+				// const lastIndex = dataMessages.value.length - 1
+				dataMessages.value[0].push(message)
+				dataMessages.value[0].push(responseMessage)
 			} else {
 					dataMessages.value.unshift([message, responseMessage])
 			}
