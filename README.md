@@ -23,17 +23,17 @@ This project is a clone of a chat application powered by ChatGPT, which is based
 
 ## Installation
 
-## Clone the repository:
+### Clone the repository:
 ```
 git clone https://github.com/your/repository.git
 ```
 
-## Navigate to the project directory:
+### Navigate to the project directory:
 ```
 cd project-directory
 ```
 
-## Install dependencies:
+### Install dependencies:
 ```
 npm install
 ```
