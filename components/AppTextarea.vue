@@ -1,6 +1,6 @@
 <template>
 	<div class="relative">
-		<textarea v-model="chatGptStore.inputData" placeholder="Message ChatGPT..." class="border border-border bg-background placeholder:text-border w-full rounded-md p-2 pr-8 resize-none text-sm max-h-[158px] outline-none focus:shadow-border focus:shadow-white" style="height: 38px;" @input="adjustTextareaHeight"></textarea>
+		<textarea v-model="chatGptStore.inputData" @keypress.prevent.enter="chatGptStore.sendMessage" placeholder="Message ChatGPT..." class="border border-border bg-background placeholder:text-border w-full rounded-md p-2 pr-8 resize-none text-sm max-h-[158px] outline-none focus:shadow-border focus:shadow-white" style="height: 38px;" @input="adjustTextareaHeight"></textarea>
 		<button class="absolute right-1 bottom-1.5" @click="chatGptStore.sendMessage" :disabled="checkEmptyField">
 			<Icon name="jam:arrow-square-up-f" size="30px" :color="changeColorIcon" />
 		</button>
